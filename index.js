@@ -1,4 +1,3 @@
-// index.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -20,7 +19,7 @@ app.options(cors(corsConfig))
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
